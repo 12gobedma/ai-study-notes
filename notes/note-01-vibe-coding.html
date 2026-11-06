@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOTE #01：從 Vibe Coding 到規格驅動開發 | AI 實戰學習筆記庫</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="brand">🤖 AI 實戰學習筆記庫</a>
+      <nav>
+        <a href="../index.html" class="nav-link">← 返回筆記總覽</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container article-container">
+    <div class="article-header">
+      <div class="article-meta">
+        <span class="note-number">NOTE #01</span>
+        <span class="note-category">開發思維</span>
+        <span class="date">📅 2026-11-06</span>
+      </div>
+      <h1>從 Vibe Coding 到規格驅動開發：AI 協作的進化</h1>
+      <p class="subtitle">為什麼「做完一個網頁」跟「建立一套能持續擴充的網站系統」完全不同？</p>
+    </div>
+
+    <section class="summary-box">
+      <h2>🎯 本篇核心重點 (Key Takeaways)</h2>
+      <ul>
+        <li><strong>Vibe Coding 的優勢與極限</strong>：適合快速做出單一頁面原型，但在擴充多頁面時容易發生風格不一致、結構混亂的問題。</li>
+        <li><strong>規則驅動開發 (Rule-Driven Development)</strong>：先定義好專案規則（<code>AGENTS.md</code>），再讓 AI 依循規則產出內容，確保每次新增都維持高品質。</li>
+        <li><strong>可重複使用性 (Reusability)</strong>：好的規範能讓未來新增第 10 篇、第 50 篇筆記時，依然只要花費幾秒鐘的指令時間。</li>
+      </ul>
+    </section>
+
+    <article class="article-content">
+      <h2>1. 什麼是 Vibe Coding？為什麼需要進階？</h2>
+      <p>
+        在剛接觸 AI 輔助寫程式時，我們常使用 <strong>Vibe Coding（憑感覺寫程式）</strong>：想到什麼就跟 AI 說什麼，先求把眼前的單一網頁做出來。這種方式非常直覺、有成就感，但當我們想要「下週再新增三個頁面」時，AI 往往會忘記上次用的配色、字體大小或導覽列結構，導致每個頁面看起來像不同網站。
+      </p>
+
+      <h2>2. Vibe Coding 與 AGENTS.md 規格驅動開發比較</h2>
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>比較項目</th>
+            <th>單純 Vibe Coding</th>
+            <th>搭配 AGENTS.md 規則驅動開發</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>主要目標</strong></td>
+            <td>把眼前「這一個網頁」快速做出來</td>
+            <td>建立一套規則，讓之後能快速、一致地製作新頁面</td>
+          </tr>
+          <tr>
+            <td><strong>跨頁面一致性</strong></td>
+            <td>容易跑版、每次生成的配色與版型可能不同</td>
+            <td>100% 統一（共用 <code>style.css</code> 與標準 HTML 模板）</td>
+          </tr>
+          <tr>
+            <td><strong>新增頁面的成本</strong></td>
+            <td>每次都要重新描述排版、顏色、按鈕位置</td>
+            <td>只需告訴 AI「依循 AGENTS.md 新增某主題筆記」即可</td>
+          </tr>
+          <tr>
+            <td><strong>可維護性與延伸性</strong></td>
+            <td>低，檔案散亂無命名規則</td>
+            <td>高，具備標準檔案命名與首頁索引同步機制</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>3. 實際體會：規則就是 AI 的長期記憶</h2>
+      <p>
+        大型語言模型（LLM）每次開啟新對話時，並沒有對專案慣例的記憶。而放在專案根目錄的 <code>AGENTS.md</code> 或 <code>CLAUDE.md</code>，就如同給 AI 助教的「員工訓練手冊」。只要這份手冊寫得夠清楚，任何 AI 工具接手這個專案都能無縫銜接。
+      </p>
+
+      <div class="tip-box">
+        <strong>💡 AI 實戰小撇步：</strong>
+        <p>當你發現自己在對話中重複叮嚀 AI 同一件事（例如：「記得加上返回首頁按鈕」、「記得放在 notes 資料夾」）超過兩次，就應該把這條規則寫進 <code>AGENTS.md</code> 裡！</p>
+      </div>
+    </article>
+
+    <div class="article-nav">
+      <a href="../index.html" class="btn-secondary">← 回到首頁總覽</a>
+      <a href="note-02-agents-md.html" class="btn-secondary">下一篇：NOTE #02 AGENTS.md 實戰指南 →</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 AI 實戰學習筆記庫 | 雲科大 資工碩一 黃永升 (M11517041) | 依循 AGENTS.md 規範建置</p>
+    </div>
+  </footer>
+</body>
+</html>

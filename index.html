@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 實戰學習筆記庫 | 雲科大資工碩一 黃永升</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 1. 頂部導覽列 (.navbar) -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand">🤖 AI 實戰學習筆記庫</a>
+      <nav class="nav-links">
+        <a href="#notes-section" class="nav-link">筆記總覽</a>
+        <a href="#workflow-section" class="nav-link">AGENTS.md 擴充機制</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 2. 英雄橫幅區 (.hero) -->
+  <section class="hero">
+    <div class="container">
+      <span class="hero-badge">⚡ Driven by AGENTS.md Specification</span>
+      <h1>AI 實戰學習筆記庫 (AI Study Notes Hub)</h1>
+      <p>
+        這是一個遵循 <code>AGENTS.md</code> 標準化規範打造的個人 AI 課程知識庫。
+        透過明確定義「頁面結構、視覺風格与擴充 SOP」，讓 AI 助教能依照同一套規則，快速且一致地持續擴充新的學習筆記頁面。
+      </p>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">03 篇</span>
+          <span class="stat-label">已收錄核心筆記</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">符合 AGENTS.md 規範</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">雲科大資工碩一</span>
+          <span class="stat-label">黃永升 (M11517041)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <!-- 3. 規則說明橫幅 (.rule-banner) -->
+    <section class="rule-banner" id="workflow-section">
+      <div class="rule-banner-text">
+        <h2>📐 本網站如何透過 AGENTS.md 持續擴充？</h2>
+        <p>
+          本專案在根目錄定義了 <code>AGENTS.md</code>，規範了檔案命名（<code>notes/note-XX-slug.html</code>）、5 大必備文章區塊與標準 HTML 模板。當需要新增下一週筆記時，只需告訴 AI 主題，AI 就會自動建立新頁面並更新下方卡片索引！
+        </p>
+      </div>
+    </section>
+
+    <!-- 4. 筆記卡片列表區 (.notes-grid) -->
+    <div class="section-header" id="notes-section">
+      <h2>📚 課程學習筆記總覽</h2>
+      <span>點擊卡片進入閱讀完整結構化筆記</span>
+    </div>
+
+    <section class="notes-grid">
+      <!-- NOTE #01 -->
+      <article class="note-card">
+        <div class="card-top">
+          <span class="note-number">NOTE #01</span>
+          <span class="note-category">開發思維</span>
+        </div>
+        <h3><a href="notes/note-01-vibe-coding.html">從 Vibe Coding 到規格驅動開發：AI 協作的進化</a></h3>
+        <p class="card-desc">
+          探討直覺式 Vibe Coding 與規則驅動開發（Rule-Driven Development）的差異，理解為什麼中大型或持續維護的網站需要統一的規範文件。
+        </p>
+        <div class="keywords">
+          <span>#VibeCoding</span>
+          <span>#AI協作</span>
+          <span>#軟體工程</span>
+        </div>
+        <div class="card-footer">
+          <span class="date">📅 2026-11-06</span>
+          <a href="notes/note-01-vibe-coding.html" class="read-more">閱讀筆記 →</a>
+        </div>
+      </article>
+
+      <!-- NOTE #02 -->
+      <article class="note-card">
+        <div class="card-top">
+          <span class="note-number">NOTE #02</span>
+          <span class="note-category">專案架構</span>
+        </div>
+        <h3><a href="notes/note-02-agents-md.html">AGENTS.md 與 CLAUDE.md 實戰指南：為 AI 寫一份好規格</a></h3>
+        <p class="card-desc">
+          深入解析如何撰寫一份讓 Coding Agent 一看就懂的專案說明書，包含目錄結構、視覺變數、HTML 模板與新增頁面的標準作業流程（SOP）。
+        </p>
+        <div class="keywords">
+          <span>#AGENTS.md</span>
+          <span>#CLAUDE.md</span>
+          <span>#知識庫擴充</span>
+        </div>
+        <div class="card-footer">
+          <span class="date">📅 2026-11-06</span>
+          <a href="notes/note-02-agents-md.html" class="read-more">閱讀筆記 →</a>
+        </div>
+      </article>
+
+      <!-- NOTE #03 -->
+      <article class="note-card">
+        <div class="card-top">
+          <span class="note-number">NOTE #03</span>
+          <span class="note-category">提示工程</span>
+        </div>
+        <h3><a href="notes/note-03-prompt-engineering.html">結構化 Prompt 設計技巧：讓 AI 穩定輸出高品質成果</a></h3>
+        <p class="card-desc">
+          整理課堂實用的「角色設定 + 任務拆解 + 輸出格式限制」結構化提示詞框架，搭配 AGENTS.md 實現一句話自動生成新筆記頁面的工作流。
+        </p>
+        <div class="keywords">
+          <span>#PromptEngineering</span>
+          <span>#結構化輸出</span>
+          <span>#自動化工作流</span>
+        </div>
+        <div class="card-footer">
+          <span class="date">📅 2026-11-06</span>
+          <a href="notes/note-03-prompt-engineering.html" class="read-more">閱讀筆記 →</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- 5. 頁尾 (.footer) -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 AI 實戰學習筆記庫 | 雲科大 資工碩一 黃永升 (M11517041) | 依循 AGENTS.md 規範建置</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOTE #03：結構化 Prompt 設計技巧 | AI 實戰學習筆記庫</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="brand">🤖 AI 實戰學習筆記庫</a>
+      <nav>
+        <a href="../index.html" class="nav-link">← 返回筆記總覽</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container article-container">
+    <div class="article-header">
+      <div class="article-meta">
+        <span class="note-number">NOTE #03</span>
+        <span class="note-category">提示工程</span>
+        <span class="date">📅 2026-11-06</span>
+      </div>
+      <h1>結構化 Prompt 設計技巧：讓 AI 穩定輸出高品質成果</h1>
+      <p class="subtitle">結合角色設定、任務拆解與格式限制，把 AI 變成最可靠的學習與開發助教</p>
+    </div>
+
+    <section class="summary-box">
+      <h2>🎯 本篇核心重點 (Key Takeaways)</h2>
+      <ul>
+        <li><strong>RTF 框架 (Role - Task - Format)</strong>：明確指定 AI 的角色、要完成的具體步驟，以及最終輸出的格式規範。</li>
+        <li><strong>先分析再執行 (Think Step-by-Step)</strong>：要求 AI 先拆解題目與步驟，能顯著降低幻覺與遺漏需求的風險。</li>
+        <li><strong>專案級 Prompt vs 對話級 Prompt</strong>：<code>AGENTS.md</code> 負責固定不變的專案規則，對話 Prompt 則負責提供當次的新增主題內容。</li>
+      </ul>
+    </section>
+
+    <article class="article-content">
+      <h2>1. 為什麼結構化 Prompt 這麼重要？</h2>
+      <p>
+        當我們對 AI 下達模糊的指令（如：「幫我寫一個筆記網頁」），AI 只能憑機率猜測我們想要的版型與深度。而透過結構化的提示詞設計，我們能將任務拆解為清楚的規則，讓 AI 的輸出既穩定又符合預期。
+      </p>
+
+      <h2>2. 實用的結構化 Prompt 四大要素</h2>
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>要素名稱</th>
+            <th>作用說明</th>
+            <th>實例示範</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1. 角色設定 (Role)</strong></td>
+            <td>決定 AI 的專業視角與溝通語氣</td>
+            <td>「你現在是我的 AI 課程助教與前端架構師...」</td>
+          </tr>
+          <tr>
+            <td><strong>2. 背景與規則 (Context &amp; Rules)</strong></td>
+            <td>提供專案規範或參考標準</td>
+            <td>「請嚴格遵守本專案 <code>AGENTS.md</code> 中的版型與命名規則...」</td>
+          </tr>
+          <tr>
+            <td><strong>3. 具體任務 (Task)</strong></td>
+            <td>明確列出本次要新增或修改的項目</td>
+            <td>「新增第 03 篇關於結構化 Prompt 的筆記，並更新首頁卡片...」</td>
+          </tr>
+          <tr>
+            <td><strong>4. 輸出檢查 (Verification)</strong></td>
+            <td>確保結果沒有遺漏關鍵要求</td>
+            <td>「完成後請逐項檢查是否包含摘要框、程式碼區塊與返回首頁連結。」</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>3. 結合課堂筆記與網站自動化擴充</h2>
+      <p>
+        透過本網站建立的架構，往後每週上完課，我只需要把課堂隨手記下的粗略重點貼給 AI，AI 就能自動幫我整理成包含「核心重點摘要框」、「比較表格」與「實戰小撇步」的精美網頁，真正實現個人知識庫的長期累積！
+      </p>
+
+      <div class="tip-box">
+        <strong>💡 AI 實戰小撇步：</strong>
+        <p>你可以把常用的擴充指令直接寫在 <code>AGENTS.md</code> 的最後一節，這樣連下次要怎麼對 AI 下 Prompt 都不用重新思考，直接複製貼上就能用！</p>
+      </div>
+    </article>
+
+    <div class="article-nav">
+      <a href="note-02-agents-md.html" class="btn-secondary">← 上一篇：NOTE #02 AGENTS.md 實戰指南</a>
+      <a href="../index.html" class="btn-secondary">回到首頁總覽 →</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 AI 實戰學習筆記庫 | 雲科大 資工碩一 黃永升 (M11517041) | 依循 AGENTS.md 規範建置</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOTE #02：AGENTS.md 與 CLAUDE.md 實戰指南 | AI 實戰學習筆記庫</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="brand">🤖 AI 實戰學習筆記庫</a>
+      <nav>
+        <a href="../index.html" class="nav-link">← 返回筆記總覽</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container article-container">
+    <div class="article-header">
+      <div class="article-meta">
+        <span class="note-number">NOTE #02</span>
+        <span class="note-category">專案架構</span>
+        <span class="date">📅 2026-11-06</span>
+      </div>
+      <h1>AGENTS.md 與 CLAUDE.md 實戰指南：為 AI 寫一份好規格</h1>
+      <p class="subtitle">拆解高分 AGENTS.md 必備的 6 大核心模組，讓 AI 清楚理解專案該如何繼續做下去</p>
+    </div>
+
+    <section class="summary-box">
+      <h2>🎯 本篇核心重點 (Key Takeaways)</h2>
+      <ul>
+        <li><strong>明確勝過模糊</strong>：與其寫「風格要好看」，不如在 <code>AGENTS.md</code> 明確指定色票（如 <code>#2563eb</code>）與使用的 CSS Class。</li>
+        <li><strong>提供標準模板 (Template)</strong>：在文件中直接附上 HTML 結構範本，AI 新增頁面時就能達到零誤差複製與填寫。</li>
+        <li><strong>定義標準作業流程 (SOP)</strong>：規定 AI 新增單篇頁面後，必須「同步更新首頁卡片列表」，避免產生孤兒頁面。</li>
+      </ul>
+    </section>
+
+    <article class="article-content">
+      <h2>1. 一份優秀的 AGENTS.md 應該包含哪些內容？</h2>
+      <p>
+        在本專案（AI 實戰學習筆記庫）中，我們設計的 <code>AGENTS.md</code> 涵蓋了以下六大關鍵維度，確保 AI 讀完後能完全掌握開發方式：
+      </p>
+      <ol>
+        <li><strong>專案目的 (Purpose)</strong>：定義網站定位為「AI 課程學習筆記庫」。</li>
+        <li><strong>目錄與檔案命名規則 (Naming Conventions)</strong>：所有筆記統一存放於 <code>notes/note-XX-slug.html</code>。</li>
+        <li><strong>視覺設計系統 (Design System)</strong>：統一引用 <code>style.css</code> 的配色與排版變數。</li>
+        <li><strong>頁面結構規範 (Page Structure)</strong>：規定單篇筆記必備的 5 個區塊（導覽列、標頭、核心摘要框、正文、底部導覽）。</li>
+        <li><strong>新增內容 SOP (Workflow)</strong>：建立新檔 → 更新 <code>index.html</code> 卡片與計數 → 更新上下篇連結。</li>
+        <li><strong>禁止事項 (Guardrails)</strong>：禁止破壞既有結構或引入不必要的外部複雜框架。</li>
+      </ol>
+
+      <h2>2. 如何下指令讓 AI 依照 AGENTS.md 新增頁面？</h2>
+      <p>當我們已經寫好 <code>AGENTS.md</code> 後，未來要新增第 04 篇筆記時，只需要輸入以下簡短指令：</p>
+      <pre><code>請先閱讀專案根目錄的 AGENTS.md 規範。
+請幫我新增第 04 篇學習筆記：
+- 主題：RAG 檢索增強生成入門與應用
+- 分類：模型應用
+- 檔名：notes/note-04-rag-intro.html
+請依照 AGENTS.md 的標準模板建立新頁面，並同步在 index.html 新增對應的筆記卡片與更新統計數字。</code></pre>
+
+      <div class="tip-box">
+        <strong>💡 AI 實戰小撇步：</strong>
+        <p>在 <code>AGENTS.md</code> 中特別提醒「跨資料夾的相對路徑差異」（例如 <code>notes/</code> 底下的檔案引用 CSS 要寫 <code>../style.css</code>），可以大幅減少 AI 把新頁面樣式弄壞的機率！</p>
+      </div>
+    </article>
+
+    <div class="article-nav">
+      <a href="note-01-vibe-coding.html" class="btn-secondary">← 上一篇：NOTE #01 Vibe Coding 的進化</a>
+      <a href="note-03-prompt-engineering.html" class="btn-secondary">下一篇：NOTE #03 結構化 Prompt 技巧 →</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 AI 實戰學習筆記庫 | 雲科大 資工碩一 黃永升 (M11517041) | 依循 AGENTS.md 規範建置</p>
+    </div>
+  </footer>
+</body>
+</html>
